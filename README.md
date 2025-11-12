@@ -1,4 +1,5 @@
 #Calculadora de IMC(Índice de Massa Corporal)
+
 Projeto simples desenvolvido em Python para calcular o IMC, informando o resultado e a classificação e situação de acordo com o valor obtido.
 
 #Funcionalidades

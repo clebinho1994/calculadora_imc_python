@@ -1,4 +1,5 @@
 #Calculadora IMC em Python
+
 print("----------------------------------")
 print("Calculadora IMC")
 while True:
@@ -11,25 +12,25 @@ while True:
     imc = float(peso / (altura ** 2))
     print(f"Seu indice de massa corporal é: {round(imc, 2)}")
 
-
-    if imc < 18.5:
-        print("Você está abaixo do peso\n"
-              "Situação: Magreza")
-    elif imc > 18.5 and imc < 25:
-        print("Você está no peso ideal\n"
-              "Situação: Saudável")
-    elif imc > 25 and imc < 30:
-        print("Você está com Sobrepeso\n"
-              "Situação: Atenção")
-    elif imc > 30 and imc < 35:
-        print("Você está com Obesidade Grau I\n"
-              "Situação: Moderado")
-    elif imc > 35 and imc < 40:
-        print("Você está com Obesidade Grau II\n"
-              "Situação: Severo")
-    else:
-        print("Você está com Obesidade Grau II (Mórbida)\n"
-              "Situação: Muito severo")
+    match imc:
+        case valor if valor < 18.5:
+            print("Você está abaixo do peso\n"
+                  "Situação: Magreza")
+        case valor if 18.5 <= valor < 25:
+            print("Você está no peso ideal\n"
+                  "Situação: Saudável")
+        case valor if 25 <= valor < 30:
+            print("Você está com Sobrepeso\n"
+                  "Situação: Atenção")
+        case valor if 30 <= valor < 35:
+            print("Você está com Obesidade Grau I\n"
+                  "Situação: Moderado")
+        case valor if 35 <= valor < 40:
+            print("Você está com Obesidade Grau II\n"
+                  "Situação: Severo")
+        case _:
+            print("Você está com Obesidade Grau II (Mórbida)\n"
+                  "Situação: Muito severo")
 
     print("----------------------------------")
 

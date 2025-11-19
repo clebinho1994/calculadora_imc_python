@@ -14,4 +14,5 @@ Projeto simples desenvolvido em Python para calcular o IMC, informando o resulta
   - Obesidade Grau II | Severo
   - Obesidade Grau III | Muito severo
 
-Utilizei python puro.
+19/11 Foi feita uma alteração no código. 
+Troquei a condição if por match/case.
